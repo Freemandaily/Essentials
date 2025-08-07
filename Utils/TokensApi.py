@@ -38,6 +38,8 @@ def get_amm_token_pool_data(token_address)-> TokenInfo:
     # Make API Call
     data =  _get_request(ray_url_market_id_url)
 
+
+
     if len(data) > 0:
         try:
            token_info = TokenInfo(token_address)

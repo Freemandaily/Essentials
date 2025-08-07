@@ -38,6 +38,7 @@ class MarketManager:
 
             return lp_data.price
 
+
    async def monitor_token(self,token_address):
        await self.ray_pool_monitor.monitor_token(token_address)
 

@@ -8,6 +8,7 @@ class SolanaRpcApi:
         self.rpc_url = rpc_url
         self.wss_url = wss_url
 
+
     def run_rpc_method(self,request_name:str,params):
         json_request = request(request_name,params=params)
         response = requests.post(self.rpc_url,json=json_request)
