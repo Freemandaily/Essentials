@@ -12,9 +12,12 @@ The **Market Manager** is one of the core component of the trading bot, designed
 
 ### How It Works
 
-1. **Initialization**: Receives token(s) and strategy details (e.g., target price, stop-loss) from the trading engine after a user places a trade.( 
-2. **WebSocket Connection**: Establishes WebSocket connections to the (solana websocket Rpc for tracking of pool changes which is used to Calculate the token Price
+1. **Initialization**: Receives token(s) 
+2. **WebSocket Connection**: Establishes WebSocket connections to the (solana websocket Rpc for tracking of pool changes which is used to Calculate the token Price)
 3. **Real-Time Monitoring**: Asynchronously processes incoming price data, maintaining an internal state.
-4. **Strategy Evaluation**: Compares market data against the user's strategy, triggering actions (e.g., trade execution notifications) when conditions are met.( This featuers Will work with Trading componet)
 5. **Multi-Token Support**: Manages multiple tokens in parallel, ensuring independent and efficient monitoring of each token's price feed.
 6. **Error Handling**: Automatically reconnects on WebSocket failures, logs errors, and optionally falls back to REST API polling.
+
+### TO DO
+1. **Strategy Evaluation**: Compares market data against the user's strategy, triggering actions (e.g., trade execution notifications) when conditions are met.
+   
