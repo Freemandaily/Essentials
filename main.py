@@ -57,7 +57,8 @@ async def main():
     solana_rpc_api = SolanaRpcApi(http_url, wss_url)
     market_manager = MarketManager(solana_rpc_api)
     monitor = TokenMonitor(market_manager)
-
+ 
+    # addedd
     async def initiate():
         while True:
             try:
